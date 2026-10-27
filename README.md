@@ -3,19 +3,8 @@
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter&logoColor=white)](https://flutter.dev)
 [![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart&logoColor=white)](https://dart.dev)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/rehan-abc/Portfolio-flutter-/pulls)
 
 A single-page developer portfolio built with Flutter and Material 3. It runs natively across web, desktop, and mobile from a single codebase, with zero third-party UI dependencies to keep maintenance minimal and builds fast.
-
----
-
-## Demo Preview
-
-
-https://github.com/user-attachments/assets/896c5ae7-36c5-4dfd-9a48-b6fd569046db
-- **Desktop:** `w >= 1150px` (Multi-column grids, inline navigation)
-- **Mobile:** `w < 900px` (Single column, drawer menu, touch-friendly tap targets)
-
 
 ---
 
@@ -39,6 +28,16 @@ https://github.com/user-attachments/assets/896c5ae7-36c5-4dfd-9a48-b6fd569046db
 | **Cards & Boxes** | `Container` | Project cards and colored boxes |
 | **Lists & Grids** | `GridView`, `ListView` | Project cards, skills, and timeline |
 | **Progress Bars** | `LinearProgressIndicator` | Skill percentages (e.g., 90%) |
+
+---
+
+
+## Demo Preview
+
+
+https://github.com/user-attachments/assets/896c5ae7-36c5-4dfd-9a48-b6fd569046db
+- **Desktop:** `w >= 1150px` (Multi-column grids, inline navigation)
+- **Mobile:** `w < 900px` (Single column, drawer menu, touch-friendly tap targets)
 
 
 ---
