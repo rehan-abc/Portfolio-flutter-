@@ -38,8 +38,8 @@ class _ContactSectionState extends State<ContactSection> {
 
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Row(
-              children: const [
+            content: const Row(
+              children: [
                 Icon(Icons.check_circle_rounded, color: Colors.white),
                 SizedBox(width: 10),
                 Text("Thank you! Your message has been sent successfully."),
@@ -55,7 +55,6 @@ class _ContactSectionState extends State<ContactSection> {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     final isMobile = Responsive.isMobile(context);
 
     return Container(
@@ -125,19 +124,19 @@ class _ContactSectionState extends State<ContactSection> {
         ),
         const SizedBox(height: 28),
 
-        _InfoTile(
+        const _InfoTile(
           icon: Icons.email_outlined,
           title: "Email",
           value: AppConstants.developerEmail,
         ),
         const SizedBox(height: 16),
-        _InfoTile(
+        const _InfoTile(
           icon: Icons.location_on_outlined,
           title: "Location",
           value: AppConstants.developerLocation,
         ),
         const SizedBox(height: 16),
-        _InfoTile(
+        const _InfoTile(
           icon: Icons.code_rounded,
           title: "GitHub",
           value: AppConstants.githubUrl,
@@ -228,9 +227,9 @@ class _ContactSectionState extends State<ContactSection> {
                         valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
                       ),
                     )
-                  : Row(
+                  : const Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Icon(Icons.send_rounded, size: 18),
                         SizedBox(width: 8),
                         Text(

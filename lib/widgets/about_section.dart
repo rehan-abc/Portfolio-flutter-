@@ -47,11 +47,11 @@ class AboutSection extends StatelessWidget {
                     const SizedBox(height: 28),
 
                     // Skill pills / core strengths
-                    Wrap(
+                    const Wrap(
                       spacing: 12,
                       runSpacing: 10,
                       alignment: WrapAlignment.center,
-                      children: const [
+                      children: [
                         _StrengthBadge(icon: Icons.architecture_rounded, text: "Clean Architecture"),
                         _StrengthBadge(icon: Icons.devices_rounded, text: "Cross-Platform"),
                         _StrengthBadge(icon: Icons.speed_rounded, text: "High Performance"),
@@ -65,7 +65,7 @@ class AboutSection extends StatelessWidget {
               const SizedBox(height: 40),
 
               // Stats Row / Grid
-              Wrap(
+              const Wrap(
                 spacing: 24,
                 runSpacing: 20,
                 alignment: WrapAlignment.center,

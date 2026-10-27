@@ -26,7 +26,7 @@ class AppTheme {
         secondary: secondaryColor,
         surface: darkSurface,
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: darkSurface,
         elevation: 4,
         shape: RoundedRectangleBorder(
@@ -85,7 +85,7 @@ class AppTheme {
         secondary: secondaryColor,
         surface: lightSurface,
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: lightSurface,
         elevation: 2,
         shape: RoundedRectangleBorder(

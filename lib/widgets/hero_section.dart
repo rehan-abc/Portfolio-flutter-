@@ -14,7 +14,6 @@ class HeroSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     final isMobile = Responsive.isMobile(context);
 
     return Container(

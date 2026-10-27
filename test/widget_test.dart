@@ -6,8 +6,16 @@ import 'package:portfolio/main.dart';
 void main() {
   testWidgets('Portfolio app boots up and displays brand logo and title',
       (WidgetTester tester) async {
+    tester.view.physicalSize = const Size(1280, 900);
+    tester.view.devicePixelRatio = 1.0;
+    addTearDown(() {
+      tester.view.resetPhysicalSize();
+      tester.view.resetDevicePixelRatio();
+    });
+
     // Build our app and trigger a frame.
     await tester.pumpWidget(const PortfolioApp());
+    await tester.pumpAndSettle();
 
     // Verify brand title is present
     expect(find.text("<${AppConstants.developerName} />"), findsWidgets);
@@ -21,9 +29,17 @@ void main() {
   });
 
   testWidgets('Theme toggle switches mode', (WidgetTester tester) async {
-    await tester.pumpWidget(const PortfolioApp());
+    tester.view.physicalSize = const Size(1280, 900);
+    tester.view.devicePixelRatio = 1.0;
+    addTearDown(() {
+      tester.view.resetPhysicalSize();
+      tester.view.resetDevicePixelRatio();
+    });
 
-    // Find the theme switcher button icon
+    await tester.pumpWidget(const PortfolioApp());
+    await tester.pumpAndSettle();
+
+    // Find the theme switcher button icon (initially dark mode, showing light_mode icon)
     final Finder themeToggleFinder = find.byIcon(Icons.light_mode_rounded);
     expect(themeToggleFinder, findsWidgets);
 

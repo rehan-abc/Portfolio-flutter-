@@ -8,7 +8,6 @@ class ProjectsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     final isMobile = Responsive.isMobile(context);
 
     return Container(
@@ -142,9 +141,9 @@ class _ProjectCard extends StatelessWidget {
                     color: Colors.amber.withOpacity(0.15),
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisSize: MainAxisSize.min,
-                    children: const [
+                    children: [
                       Icon(Icons.star_rounded, size: 14, color: Colors.amber),
                       SizedBox(width: 4),
                       Text(

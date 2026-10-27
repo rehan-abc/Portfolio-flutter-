@@ -15,7 +15,6 @@ class _SkillsSectionState extends State<SkillsSection> {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     final isMobile = Responsive.isMobile(context);
 
     final filteredSkills = _selectedCategory == null
