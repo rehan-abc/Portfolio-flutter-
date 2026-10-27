@@ -21,6 +21,17 @@ https://github.com/user-attachments/assets/896c5ae7-36c5-4dfd-9a48-b6fd569046db
 
 ## Concepts Included In The UI Design
 
+| Element | Flutter Widget | Used For |
+| :--- | :--- | :--- |
+| **Text** | `Text` | Titles, bio, and descriptions |
+| **Image** | `Image` | Profile picture (`profile.jpeg`) |
+| **Icons** | `Icon` | Tech and social icons |
+| **Buttons** | `ElevatedButton`, `IconButton` | "Contact Me", links, and theme toggle |
+| **Input Fields** | `TextFormField` | Name, email, and message boxes |
+| **Cards & Boxes** | `Container` | Project cards and colored boxes |
+| **Lists & Grids** | `GridView`, `ListView` | Project cards, skills, and timeline |
+| **Progress Bars** | `LinearProgressIndicator` | Skill percentages (e.g., 90%) |
+
 
 ---
 
