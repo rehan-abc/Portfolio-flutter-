@@ -11,9 +11,11 @@ A single-page developer portfolio built with Flutter and Material 3. It runs nat
 
 ## Demo Preview
 
+
+https://github.com/user-attachments/assets/896c5ae7-36c5-4dfd-9a48-b6fd569046db
+
 https://github.com/rehan-abc/Portfolio-flutter-/raw/main/1028.mp4
 
-*(Direct file link: [`1028.mp4`](1028.mp4))*
 
 ---
 
