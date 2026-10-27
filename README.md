@@ -21,12 +21,20 @@ https://github.com/user-attachments/assets/896c5ae7-36c5-4dfd-9a48-b6fd569046db
 
 ## Concepts Included In The UI Design
 
+<img width="1280" height="652" alt="Screenshot 2026-10-28 000040" src="https://github.com/user-attachments/assets/2e28892d-8423-4957-a6e1-5b94b7818b98" />
+
+
 | Element | Flutter Widget | Used For |
 | :--- | :--- | :--- |
 | **Text** | `Text` | Titles, bio, and descriptions |
 | **Image** | `Image` | Profile picture (`profile.jpeg`) |
 | **Icons** | `Icon` | Tech and social icons |
 | **Buttons** | `ElevatedButton`, `IconButton` | "Contact Me", links, and theme toggle |
+
+<img width="1280" height="655" alt="Screenshot 2026-10-28 005409" src="https://github.com/user-attachments/assets/588301f8-f87c-4fce-8bc8-5863eb319a1c" />
+
+| Element | Flutter Widget | Used For |
+| :--- | :--- | :--- |
 | **Input Fields** | `TextFormField` | Name, email, and message boxes |
 | **Cards & Boxes** | `Container` | Project cards and colored boxes |
 | **Lists & Grids** | `GridView`, `ListView` | Project cards, skills, and timeline |
@@ -35,23 +43,6 @@ https://github.com/user-attachments/assets/896c5ae7-36c5-4dfd-9a48-b6fd569046db
 
 ---
 
-## Overview
-
-Most portfolio templates break after a few Flutter minor updates due to abandoned UI packages. This project uses pure Flutter SDK primitives — standard Material 3 components, `LayoutBuilder`, and `MediaQuery` — to achieve responsive layouts, animated theme transitions, and section-based scrolling without external bloat.
-
-### What's included
-
-| Section | Description |
-| :--- | :--- |
-| **Hero** | Tagline, availability badge, quick action buttons, and developer badge |
-| **About** | Bio summary, engineering strengths, and key stats counters |
-| **Skills** | Filterable grid (Mobile, Frontend, Backend, Tools) with proficiency indicators |
-| **Projects** | Card grid highlighting featured builds, tech tags, and repository links |
-| **Experience** | Chronological career and education timeline with bulleted outcomes |
-| **Contact** | Validated input form with feedback states and direct social links |
-| **Navigation** | Sticky navbar with smooth-scroll section routing and theme switcher |
-
----
 
 ## Layout & Design System
 
