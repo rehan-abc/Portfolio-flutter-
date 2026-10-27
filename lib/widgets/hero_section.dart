@@ -194,34 +194,76 @@ class HeroSection extends StatelessWidget {
             shape: BoxShape.circle,
             color: theme.cardTheme.color,
           ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.person_outline_rounded,
-                size: 80,
-                color: theme.colorScheme.primary,
-              ),
-              const SizedBox(height: 8),
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                decoration: BoxDecoration(
-                  color: theme.colorScheme.primary.withOpacity(0.15),
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Text(
-                  "Flutter Dev",
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w600,
-                    color: theme.colorScheme.primary,
-                  ),
-                ),
-              ),
-            ],
-          ),
+          clipBehavior: Clip.antiAlias,
+          child: _buildAvatarContent(context),
         ),
       ),
+    );
+  }
+
+  Widget _buildAvatarContent(BuildContext context) {
+    final theme = Theme.of(context);
+
+    // 1. Local asset image
+    if (AppConstants.profileAssetPath != null &&
+        AppConstants.profileAssetPath!.isNotEmpty) {
+      return Image.asset(
+        AppConstants.profileAssetPath!,
+        fit: BoxFit.cover,
+        errorBuilder: (context, error, stackTrace) => _buildFallbackAvatar(theme),
+      );
+    }
+
+    // 2. Remote network image URL
+    if (AppConstants.profileImageUrl.isNotEmpty) {
+      return Image.network(
+        AppConstants.profileImageUrl,
+        fit: BoxFit.cover,
+        errorBuilder: (context, error, stackTrace) => _buildFallbackAvatar(theme),
+        loadingBuilder: (context, child, loadingProgress) {
+          if (loadingProgress == null) return child;
+          return Center(
+            child: CircularProgressIndicator(
+              value: loadingProgress.expectedTotalBytes != null
+                  ? loadingProgress.cumulativeBytesLoaded /
+                      loadingProgress.expectedTotalBytes!
+                  : null,
+            ),
+          );
+        },
+      );
+    }
+
+    // 3. Fallback vector avatar
+    return _buildFallbackAvatar(theme);
+  }
+
+  Widget _buildFallbackAvatar(ThemeData theme) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Icon(
+          Icons.person_outline_rounded,
+          size: 80,
+          color: theme.colorScheme.primary,
+        ),
+        const SizedBox(height: 8),
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+          decoration: BoxDecoration(
+            color: theme.colorScheme.primary.withOpacity(0.15),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: Text(
+            "Flutter Dev",
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w600,
+              color: theme.colorScheme.primary,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
