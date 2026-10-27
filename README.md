@@ -9,6 +9,14 @@ A single-page developer portfolio built with Flutter and Material 3. It runs nat
 
 ---
 
+## Demo Preview
+
+https://github.com/rehan-abc/Portfolio-flutter-/raw/main/1028.mp4
+
+*(Direct file link: [`1028.mp4`](1028.mp4))*
+
+---
+
 ## Overview
 
 Most portfolio templates break after a few Flutter minor updates due to abandoned UI packages. This project uses pure Flutter SDK primitives — standard Material 3 components, `LayoutBuilder`, and `MediaQuery` — to achieve responsive layouts, animated theme transitions, and section-based scrolling without external bloat.

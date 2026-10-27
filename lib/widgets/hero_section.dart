@@ -205,10 +205,9 @@ class HeroSection extends StatelessWidget {
     final theme = Theme.of(context);
 
     // 1. Local asset image
-    if (AppConstants.profileAssetPath != null &&
-        AppConstants.profileAssetPath!.isNotEmpty) {
+    if (AppConstants.profileAssetPath.isNotEmpty) {
       return Image.asset(
-        AppConstants.profileAssetPath!,
+        AppConstants.profileAssetPath,
         fit: BoxFit.cover,
         errorBuilder: (context, error, stackTrace) => _buildFallbackAvatar(theme),
       );

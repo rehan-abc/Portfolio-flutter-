@@ -8,14 +8,14 @@ class AppConstants {
       "I am a passionate software developer specializing in building beautiful, fast, and scalable mobile and web applications with Flutter. I love solving real-world problems through clean code, thoughtful UI/UX, and robust architecture.";
 
   // Profile Image Configuration
-  // Option 1 (Local): Put an image in assets/images/ and set path below (e.g. 'assets/images/profile.png')
-  static const String? profileAssetPath = null;
+  // Option 1 (Local): Put an image in assets/images/ and set path below (e.g. 'assets/images/profile.jpeg')
+  static const String profileAssetPath = 'assets/images/profile.jpeg';
   // Option 2 (Online): Provide direct image URL (e.g. GitHub avatar 'https://github.com/rehan-abc.png')
   static const String profileImageUrl = "https://github.com/rehan-abc.png";
 
   // Contact Info
-  static const String developerEmail = "rehan.dev@example.com";
-  static const String developerLocation = "Bengaluru, India";
+  static const String developerEmail = "rehan.d.3011@example.com";
+  static const String developerLocation = "Andhra Pradesh, India";
   static const String githubUrl = "https://github.com/rehan-abc";
   static const String linkedinUrl = "https://linkedin.com/in/rehan";
   static const String twitterUrl = "https://twitter.com/rehan_dev";
