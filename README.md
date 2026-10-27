@@ -13,8 +13,13 @@ A single-page developer portfolio built with Flutter and Material 3. It runs nat
 
 
 https://github.com/user-attachments/assets/896c5ae7-36c5-4dfd-9a48-b6fd569046db
+- **Desktop:** `w >= 1150px` (Multi-column grids, inline navigation)
+- **Mobile:** `w < 900px` (Single column, drawer menu, touch-friendly tap targets)
 
-https://github.com/rehan-abc/Portfolio-flutter-/raw/main/1028.mp4
+
+---
+
+## Concepts Included In The UI Design
 
 
 ---
