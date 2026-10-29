@@ -11,6 +11,13 @@ class AppTheme {
   static const Color darkSurface = Color(0xFF1E293B); // Slate 800
   static const Color darkCard = Color(0xFF334155); // Slate 700
   
+  static const Color lightBackground = Color(0xFFF8FAFC); // Slate 50
+  static const Color lightSurface = Color(0xFFFFFFFF);
+  static const Color lightCard = Color(0xFFF1F5F9); // Slate 100
+
+  // Dark Theme
+  static ThemeData get darkTheme {
+    return ThemeData(
       useMaterial3: true,
       brightness: Brightness.dark,
       scaffoldBackgroundColor: darkBackground,
